@@ -2,7 +2,7 @@
 Proof of concept for Helidon Microprofile support for JPA and Oracle Universal Connection Pool (UCP) with OracleDB
 
 # To get it running
-Prepair your Oracle database with a suitable table and record, using this sql statements:
+Prepare your Oracle database with a suitable table and record, using this sql statements:
 ```bash
 CREATE TABLE GREETING (
     SALUTATION VARCHAR(64),
@@ -15,7 +15,7 @@ Clone the project on your workstation:
 ```bash
 git clone https://github.com/doschkinow/helidon-jpa-ucp.git
 ```
-In the project directory edit src/main/resources/application.yaml to replace the URL and passowrd properties with the valus for your Oracle database.
+In the project directory edit src/main/resources/application.yaml to replace the URL and password properties with the values for your Oracle database.
 
 Build the project (with jdk-11 and maven-3.6.3):
 ```bash
