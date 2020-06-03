@@ -19,6 +19,7 @@ In the project directory edit src/main/resources/application.yaml to replace the
 
 Build the project (with jdk-11 and maven-3.6.3):
 ```bash
+cd helidon-jpa-ucp
 mvn package
 ```
 
