@@ -34,9 +34,11 @@ public class ExampleResource {
         final Greeting greeting = this.em.find(Greeting.class, salutation);
         final String returnValue;
         if (greeting == null) {
+            System.out.println("greeting is null");
             returnValue = null;
         } else {
             returnValue = greeting.getResponse();
+            System.out.println("response is: " + returnValue);
         }
         return returnValue;
     }
