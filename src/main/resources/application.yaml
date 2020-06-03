@@ -1,12 +1,13 @@
 server:
   port: 8080
 
-javax:
-    sql:
-        DataSource:
-            greetingDataSource:
-                dataSourceClassName: oracle.jdbc.pool.OracleDataSource
-                dataSource:
-                    url: jdbc:oracle:thin:@130.61.29.52:1521:ORCLCDB
-                    user: sys as sysdba
-                    password: mysecret
+oracle:
+  ucp:
+    jdbc:
+      PoolDataSource:
+        greetingDataSource:
+          URL: jdbc:oracle:thin:@130.61.29.52:1521:ORCLCDB
+          connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource
+          password: "placeholder"
+          user: sys as sysdba
+
